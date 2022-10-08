@@ -24,7 +24,7 @@ async function getResult(value) {
         let listResult = document.createElement("li");
         let content = document.createElement("p");
         listResult.textContent += response.query.search[i].title;
-        content.innerHTML += `"${response.query.search[i].snippet} + ' ...'"`;
+        content.innerHTML += `"${response.query.search[i].snippet} ..."`;
         listResult.appendChild(content);
         styleElement(listResult, content);
         resultSearch.appendChild(listResult);
